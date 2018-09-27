@@ -4,6 +4,8 @@
   "description": "",
   "author": "Benjamin Kniffler <bkniffler@me.com>",
   "license": "MIT",
+  "main": "lib",
+  "types": "lib/index.d.js",
   "scripts": {
     "build": "tsc"
   },

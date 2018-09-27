@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "name": "ficon",
   "description": "",
-  "main": "./lib",
+  "main": "lib",
   "types": "lib/index.d.js",
   "bugs": {
     "url": "https://github.com/bkniffler/ficon"
