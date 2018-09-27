@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.2.0",
   "name": "ficon-core",
   "description": "",
   "main": "lib",
@@ -23,6 +23,5 @@
   },
   "peerDependencies": {
     "react": "^16.5.2"
-  },
-  "dependencies": {}
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.2.0",
   "name": "ficon",
   "description": "",
   "main": "./lib",
@@ -19,7 +19,7 @@
     "build": "yarn clean && ficon free regular,brands ts && tsc"
   },
   "devDependencies": {
-    "ficon-generator": "^0.1.3",
+    "ficon-generator": "^0.2.0",
     "react": "^16.5.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
@@ -28,6 +28,6 @@
     "react": "^16.5.2"
   },
   "dependencies": {
-    "ficon-core": "^0.1.3"
+    "ficon-core": "^0.2.0"
   }
 }
