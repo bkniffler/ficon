@@ -1,0 +1,10 @@
+scripts
+src
+netlify.toml
+.travis.yml
+tsconfig.json
+yarn.lock
+.gitignore
+example/**
+pub
+__tests__

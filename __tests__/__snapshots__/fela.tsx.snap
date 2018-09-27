@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SVG should render correctly (default color) 1`] = `
+<svg
+  className="a b"
+/>
+`;
+
+exports[`SVG should render correctly (default color): css 1`] = `"<style type=\\"text/css\\" data-fela-rehydration=\\"2\\" data-fela-type=\\"RULE\\">.a{width:12}.b{height:12}</style>"`;
+
+exports[`SVG should render correctly (inverted) 1`] = `
+<svg
+  className="a b"
+/>
+`;
+
+exports[`SVG should render correctly (inverted): css 1`] = `"<style type=\\"text/css\\" data-fela-rehydration=\\"2\\" data-fela-type=\\"RULE\\">.a{width:12}.b{height:12}</style>"`;
+
+exports[`SVG should render correctly (red) 1`] = `
+<svg
+  className="a b c"
+/>
+`;
+
+exports[`SVG should render correctly (red): css 1`] = `"<style type=\\"text/css\\" data-fela-rehydration=\\"3\\" data-fela-type=\\"RULE\\">.a{width:12}.b{height:12}.c{fill:red}</style>"`;
+
+exports[`SVG should render correctly (theme color) 1`] = `
+<svg
+  className="a b c"
+/>
+`;
+
+exports[`SVG should render correctly (theme color): css 1`] = `"<style type=\\"text/css\\" data-fela-rehydration=\\"3\\" data-fela-type=\\"RULE\\">.a{width:12}.b{height:12}.c{fill:blue}</style>"`;
