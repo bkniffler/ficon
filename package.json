@@ -13,6 +13,7 @@
     "netlify": "yarn build && cd example/react && yarn && yarn build",
     "prepublishOnly": "yarn build && yarn test",
     "bootstrap": "lerna bootstrap",
+    "lp": "lerna publish --registry https://registry.npmjs.org",
     "build": "lerna run build",
     "clean": "rimraf lib src/icons src/index.ts",
     "test": "jest",
