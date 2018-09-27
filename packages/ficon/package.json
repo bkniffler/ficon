@@ -16,7 +16,7 @@
   "scripts": {
     "test": "jest",
     "clean": "rimraf lib src/icons src/index.ts",
-    "build": "yarn clean && ficon free regular,brands ts && tsc"
+    "build": "yarn clean && node ../ficon-generator free regular,brands ts && tsc"
   },
   "devDependencies": {
     "ficon-generator": "^0.2.0",
