@@ -40,6 +40,33 @@ OR
 npm i @ficon/regular
 ```
 
+## Example
+
+```jsx
+import { FaFontAwesomeLogoFull } from '@ficon/regular';
+
+const MyComponent = () => (
+  <div>
+    <span style={{ fontSize: 14 }}>
+      I can adapt to fontSize! <FaFontAwesomeLogoFull color="black" />
+    </span>
+    <span>
+      I can use your themes color (using theme.color)!{' '}
+      <FaFontAwesomeLogoFull color />
+    </span>
+    <span>
+      I can use your any of your themes properties!{' '}
+      <FaFontAwesomeLogoFull color="secondary" />
+    </span>
+    <span>
+      I can use any other valid color too! <FaFontAwesomeLogoFull color="red" />
+      I can use any other valid color too!{' '}
+      <FaFontAwesomeLogoFull color="#666" />
+    </span>
+  </div>
+);
+```
+
 ## Using PRO
 
 If you want to use the pro icons, you will need to publish your own private package. Clone/Fork this repository and make sure you have this in your .npmrc before installing the dependencies of ficon. You will find your own package token [here](https://fontawesome.com/account).
