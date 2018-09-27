@@ -5,9 +5,11 @@
   "author": "Benjamin Kniffler <bkniffler@me.com>",
   "license": "MIT",
   "main": "lib",
+  "esnext": "es",
+  "module": "es",
   "types": "lib/index.d.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && tsc --module esnext --outDir es"
   },
   "bin": {
     "ficon": "./lib/cli.js"

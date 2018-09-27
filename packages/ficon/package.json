@@ -3,6 +3,8 @@
   "name": "ficon",
   "description": "",
   "main": "lib",
+  "esnext": "es",
+  "module": "es",
   "types": "lib/index.d.js",
   "bugs": {
     "url": "https://github.com/bkniffler/ficon"
@@ -16,7 +18,7 @@
   "scripts": {
     "test": "jest",
     "clean": "rimraf lib src/icons src/index.ts",
-    "build": "yarn clean && node ../ficon-generator free regular,brands ts && tsc"
+    "build": "yarn clean && node ../ficon-generator free regular,brands ts && tsc && tsc --module esnext --outDir es"
   },
   "devDependencies": {
     "ficon-generator": "^0.2.1",
