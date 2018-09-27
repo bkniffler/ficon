@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "ficon-solid",
   "description": "",
   "main": "lib",
@@ -19,7 +19,7 @@
     "build": "yarn clean && node ../ficon-generator free solid,brands ts && tsc"
   },
   "devDependencies": {
-    "ficon-generator": "^0.2.0",
+    "ficon-generator": "^0.2.1",
     "react": "^16.5.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
