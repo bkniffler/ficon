@@ -14,8 +14,8 @@
     "prepublishOnly": "yarn build && yarn test",
     "bootstrap": "lerna bootstrap",
     "lp": "lerna publish --registry https://registry.npmjs.org",
-    "build": "lerna run build",
-    "clean": "rimraf lib src/icons src/index.ts",
+    "build": "yarn build-generator && lerna run build",
+    "build-generator": "cd packages/ficon-generator && yarn build",
     "test": "jest",
     "coverage": "codecov"
   },
