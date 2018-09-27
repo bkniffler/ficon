@@ -1,6 +1,6 @@
 <div align="center">
   <h2>Ficon</h2>
-  <strong>Super easy, styling agnostic fontawesome5 SVG components for react.</strong>
+  <strong>Super easy fontawesome5 SVG components for react with different styling integrations.</strong>
   <br />
   <br />
   <a href="https://travis-ci.org/bkniffler/ficon">
