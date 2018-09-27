@@ -38,8 +38,8 @@
     "preset": "ts-jest",
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "packages/*/src/**",
-      "!packages/*/src/icons"
+      "packages/ficon-core/src/**",
+      "packages/ficon-fela/src/**"
     ],
     "coverageReporters": [
       "html",
