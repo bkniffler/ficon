@@ -4,22 +4,8 @@ import { Provider, SvgPropTypes } from 'ficon-core';
 import { createComponent } from 'react-fela';
 
 const getStyle = (props: any) => {
-  const {
-    theme,
-    color,
-    size = '1em',
-    margin,
-    marginLeft,
-    marginRight,
-    marginTop,
-    marginBottom
-  } = props;
+  const { theme, color, size = '1em' } = props;
   return {
-    margin,
-    marginLeft,
-    marginRight,
-    marginTop,
-    marginBottom,
     width: size,
     height: size,
     fill:
