@@ -1,6 +1,6 @@
 <div align="center">
   <h2>Ficon</h2>
-  <strong>Easy, styling agnostic fontawesome5 SVG components for react.</strong>
+  <strong>Super easy, styling agnostic fontawesome5 SVG components for react.</strong>
   <br />
   <br />
   <a href="https://travis-ci.org/bkniffler/ficon">
@@ -30,6 +30,7 @@
 - [Examples](#examples)
   - [react](#react)
   - [react-fela](#react-fela)
+  - [react-styled-components](#react-styled-components)
   - [more](#more)
 - [FontAwesome Pro](#pro)
 
@@ -76,8 +77,8 @@ const MyComponent = () => (
       I can adapt to fontSize! <FaFontAwesome color="black" />
     </span>
     <span>
-      I can use any other valid color too! <FaFontAwesome color="red" />I can use
-      any other valid color too! <FaFontAwesome color="#666" />
+      I can use any other valid color too! <FaFontAwesome color="red" />I can
+      use any other valid color too! <FaFontAwesome color="#666" />
     </span>
   </div>
 );
@@ -115,11 +116,41 @@ const MyComponent = () => (
 );
 ```
 
+### react-styled-components
+
+Learn more about styled-components [here](https://www.styled-components.com).
+
+```jsx
+import FiconProvider from 'ficon-styled-components';
+import { FaFontAwesome } from 'ficon';
+
+const MyComponent = () => (
+  <FiconProvider>
+    <div>
+      <span style={{ fontSize: 14 }}>
+        I can adapt to fontSize! <FaFontAwesome color="black" />
+      </span>
+      <span>
+        I can use your themes color (using theme.color)! <FaFontAwesome color />
+      </span>
+      <span>
+        I can use your any of your themes properties!{' '}
+        <FaFontAwesome color="secondary" />
+      </span>
+      <span>
+        I can use any other valid color too! <FaFontAwesome color="red" />I can
+        use any other valid color too! <FaFontAwesome color="#666" />
+      </span>
+    </div>
+  </FiconProvider>
+);
+```
+
 <a name="more"/>
 
 ### more
 
-Ficon could support more styling frameworks like styled-components, jss, glamor, etc. if you want to contribute! Checkout [ficon-fela source](https://github.com/bkniffler/ficon/blob/master/packages/ficon-fela) to see how easy it is to write a custom provider. Feel free to PR!
+Ficon could support more styling frameworks like jss, glamor, etc. if you want to contribute! Checkout [ficon-fela source](https://github.com/bkniffler/ficon/blob/master/packages/ficon-fela) to see how easy it is to write a custom provider. Feel free to PR!
 
 <a name="pro"/>
 

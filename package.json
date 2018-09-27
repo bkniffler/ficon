@@ -39,7 +39,8 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "packages/ficon-core/src/**",
-      "packages/ficon-fela/src/**"
+      "packages/ficon-fela/src/**",
+      "packages/ficon-styled-components/src/**"
     ],
     "coverageReporters": [
       "html",
