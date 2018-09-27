@@ -23,5 +23,6 @@
     "fs-extra": "^7.0.0",
     "glob-promise": "^3.4.0",
     "lodash": "^4.17.11"
-  }
+  },
+  "gitHead": "f450d57deea193d5279dd690a819bedab7dd3f01"
 }
