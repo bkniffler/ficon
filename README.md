@@ -27,23 +27,25 @@
 ### Yarn
 
 ```
-yarn add @ficon/solid
-OR
-yarn add @ficon/regular
+# For regular+brands icons
+yarn add ficon
+# For solid+brands icons
+yarn add ficon-solid
 ```
 
 ### NPM
 
 ```
-npm i @ficon/solid
-OR
-npm i @ficon/regular
+# For regular+brands icons
+npm i ficon
+# For solid+brands icons
+npm i ficon-solid
 ```
 
 ## Example
 
 ```jsx
-import { FaFontAwesomeLogoFull } from '@ficon/regular';
+import { FaFontAwesomeLogoFull } from 'ficon';
 
 const MyComponent = () => (
   <div>
