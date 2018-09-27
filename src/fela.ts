@@ -17,7 +17,7 @@ const getStyle = (props: any) => {
   const {
     theme,
     color,
-    size,
+    size = '1em',
     margin,
     marginLeft,
     marginRight,
