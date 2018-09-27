@@ -68,17 +68,16 @@ npm i ficon-solid
 ### react
 
 ```jsx
-import { FaFontAwesomeLogoFull } from 'ficon';
+import { FaFontAwesome } from 'ficon';
 
 const MyComponent = () => (
   <div>
     <span style={{ fontSize: 14 }}>
-      I can adapt to fontSize! <FaFontAwesomeLogoFull color="black" />
+      I can adapt to fontSize! <FaFontAwesome color="black" />
     </span>
     <span>
-      I can use any other valid color too! <FaFontAwesomeLogoFull color="red" />
-      I can use any other valid color too!{' '}
-      <FaFontAwesomeLogoFull color="#666" />
+      I can use any other valid color too! <FaFontAwesome color="red" />I can use
+      any other valid color too! <FaFontAwesome color="#666" />
     </span>
   </div>
 );
@@ -92,26 +91,24 @@ Learn more about fela [here](https://github.com/rofrischmann/fela);
 
 ```jsx
 import FiconProvider from 'ficon-fela';
-import { FaFontAwesomeLogoFull } from 'ficon';
+import { FaFontAwesome } from 'ficon';
 
 const MyComponent = () => (
   <FiconProvider>
     <div>
       <span style={{ fontSize: 14 }}>
-        I can adapt to fontSize! <FaFontAwesomeLogoFull color="black" />
+        I can adapt to fontSize! <FaFontAwesome color="black" />
       </span>
       <span>
-        I can use your themes color (using theme.color)!{' '}
-        <FaFontAwesomeLogoFull color />
+        I can use your themes color (using theme.color)! <FaFontAwesome color />
       </span>
       <span>
         I can use your any of your themes properties!{' '}
-        <FaFontAwesomeLogoFull color="secondary" />
+        <FaFontAwesome color="secondary" />
       </span>
       <span>
-        I can use any other valid color too!{' '}
-        <FaFontAwesomeLogoFull color="red" />I can use any other valid color
-        too! <FaFontAwesomeLogoFull color="#666" />
+        I can use any other valid color too! <FaFontAwesome color="red" />I can
+        use any other valid color too! <FaFontAwesome color="#666" />
       </span>
     </div>
   </FiconProvider>

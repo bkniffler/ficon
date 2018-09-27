@@ -5,7 +5,7 @@ import { createRenderer } from 'fela';
 import { Provider as FelaProvider, ThemeProvider } from 'react-fela';
 import FiconFela from '../src';
 import { renderToMarkup } from 'fela-dom';
-import Comp from '../../ficon/src/icons/fa-font-awesome';
+import { FaFontAwesome } from '../../ficon';
 
 const getProvider = (fela: any, theme = {}) => {
   const Provider: React.SFC = ({ children }) => (
@@ -24,7 +24,7 @@ describe('SVG', () => {
     const Provider = getProvider(fela);
     const component = renderer.create(
       <Provider>
-        <Comp size={12} />
+        <FaFontAwesome size={12} />
       </Provider>
     );
     expect(component.toJSON()).toMatchSnapshot();
@@ -36,7 +36,7 @@ describe('SVG', () => {
     const Provider = getProvider(fela, { inverted: true });
     const component = renderer.create(
       <Provider>
-        <Comp size={12} />
+        <FaFontAwesome size={12} />
       </Provider>
     );
     expect(component.toJSON()).toMatchSnapshot();
@@ -48,7 +48,7 @@ describe('SVG', () => {
     const Provider = getProvider(fela, { color: 'blue' });
     const component = renderer.create(
       <Provider>
-        <Comp size={12} color />
+        <FaFontAwesome size={12} color />
       </Provider>
     );
     expect(component.toJSON()).toMatchSnapshot();
@@ -60,7 +60,7 @@ describe('SVG', () => {
     const Provider = getProvider(fela);
     const component = renderer.create(
       <Provider>
-        <Comp size={12} color="red" />
+        <FaFontAwesome size={12} color="red" />
       </Provider>
     );
     expect(component.toJSON()).toMatchSnapshot();
