@@ -38,8 +38,8 @@
     "preset": "ts-jest",
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "packages/*/src/**/*.ts",
-      "packages/*/src/**/*.tsx"
+      "packages/*/src/**/*.{tsx,ts}",
+      "!packages/*/src/icons/**/*.{tsx,ts}"
     ],
     "coverageReporters": [
       "html",
