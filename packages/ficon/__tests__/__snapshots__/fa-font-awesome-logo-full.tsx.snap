@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FaFontAwesomeLogoFull should render correctly: css 1`] = `"<style type=\\"text/css\\" data-fela-rehydration=\\"2\\" data-fela-type=\\"RULE\\">.a{width:16}.b{height:16}</style>"`;
-
-exports[`FaFontAwesomeLogoFull should render correctly: markup 1`] = `
+exports[`FaFontAwesomeLogoFull should render correctly 1`] = `
 <svg
-  className="a b"
+  height={16}
   viewBox="0 0 3992 512"
+  width={16}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path

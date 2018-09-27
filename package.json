@@ -1,20 +1,19 @@
 {
   "version": "0.1.3",
-  "name": "ficon",
+  "private": true,
+  "name": "ficon-root",
   "description": "",
-  "main": "./lib",
   "author": "Benjamin Kniffler <bkniffler@me.com>",
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "up": "yarn upgrade-interactive --latest",
     "netlify": "yarn build && cd example/react && yarn && yarn build",
     "prepublishOnly": "yarn build && yarn test",
-    "build": "yarn build:free:regular",
-    "build:free:regular": "yarn clean && ts-node scripts/generate free regular,brands && tsc",
-    "build:free:solid": "yarn clean && ts-node scripts/generate free solid,brands && tsc",
-    "build:pro:light": "yarn clean && ts-node scripts/generate pro light,brands && tsc",
-    "build:pro:regular": "yarn clean && ts-node scripts/generate pro regular,brands && tsc",
-    "build:pro:solid": "yarn clean && ts-node scripts/generate pro solid,brands && tsc",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
     "clean": "rimraf lib src/icons src/index.ts",
     "test": "jest",
     "coverage": "codecov"
@@ -34,8 +33,7 @@
     "fs-extra": "^7.0.0",
     "glob-promise": "^3.4.0",
     "jest": "^23.6.0",
-    "react": "^16.5.2",
-    "react-fela": "^8.0.2",
+    "lerna": "^3.4.0",
     "react-test-renderer": "^16.5.2",
     "rimraf": "^2.6.2",
     "tar": "^4.4.6",
@@ -43,16 +41,12 @@
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"
   },
-  "peerDependencies": {
-    "react": "^16.5.2",
-    "react-fela": "^8.0.0"
-  },
   "dependencies": {},
   "jest": {
     "preset": "ts-jest",
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.ts"
+      "packages/*/src/**/*.ts"
     ],
     "coverageReporters": [
       "html",

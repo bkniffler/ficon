@@ -22,6 +22,11 @@
   <br />
 </div>
 
+## Bindings
+
+- default non-csss
+- fela
+
 ## Install
 
 ### Yarn
@@ -53,19 +58,40 @@ const MyComponent = () => (
       I can adapt to fontSize! <FaFontAwesomeLogoFull color="black" />
     </span>
     <span>
-      I can use your themes color (using theme.color)!{' '}
-      <FaFontAwesomeLogoFull color />
-    </span>
-    <span>
-      I can use your any of your themes properties!{' '}
-      <FaFontAwesomeLogoFull color="secondary" />
-    </span>
-    <span>
-      I can use any other valid color too! <FaFontAwesomeLogoFull color="red" />
-      I can use any other valid color too!{' '}
-      <FaFontAwesomeLogoFull color="#666" />
+      I can use any other valid color too! <FaFontAwesomeLogoFull color="red" />I
+      can use any other valid color too! <FaFontAwesomeLogoFull color="#666" />
     </span>
   </div>
+);
+```
+
+## Example Fela
+
+```jsx
+import FiconProvider from 'ficon-fela';
+import { FaFontAwesomeLogoFull } from 'ficon';
+
+const MyComponent = () => (
+  <FiconProvider>
+    <div>
+      <span style={{ fontSize: 14 }}>
+        I can adapt to fontSize! <FaFontAwesomeLogoFull color="black" />
+      </span>
+      <span>
+        I can use your themes color (using theme.color)!{' '}
+        <FaFontAwesomeLogoFull color />
+      </span>
+      <span>
+        I can use your any of your themes properties!{' '}
+        <FaFontAwesomeLogoFull color="secondary" />
+      </span>
+      <span>
+        I can use any other valid color too!{' '}
+        <FaFontAwesomeLogoFull color="red" />I can use any other valid color too!{' '}
+        <FaFontAwesomeLogoFull color="#666" />
+      </span>
+    </div>
+  </FiconProvider>
 );
 ```
 

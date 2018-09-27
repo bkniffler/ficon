@@ -3,7 +3,7 @@ import { resolve, basename } from 'path';
 import { upperFirst, camelCase } from 'lodash';
 import * as glob from 'glob-promise';
 
-const outDir = resolve(__dirname, '..', 'src', 'icons');
+const outDir = resolve(process.cwd(), 'src', 'icons');
 
 const work = async (faPackage: string, faTypes: Array<string>) => {
   let index = '';

@@ -1,17 +1,7 @@
+import * as React from 'react';
+import { Provider, SvgPropTypes } from 'ficon-core';
 //@ts-ignore
 import { createComponent } from 'react-fela';
-
-export interface StyledPropTypes {
-  color?: string | boolean;
-  size: number | string;
-  theme?: any;
-  onClick?: Function;
-  margin?: number | string;
-  marginLeft?: number | string;
-  marginRight?: number | string;
-  marginTop?: number | string;
-  marginBottom?: number | string;
-}
 
 const getStyle = (props: any) => {
   const {
@@ -43,14 +33,22 @@ const getStyle = (props: any) => {
   };
 };
 
-const Svg = createComponent(getStyle, 'svg', [
-  'onClick',
-  'onMouseEnter',
-  'onMouseLeave',
-  'onMouseOver',
-  'onMouseDown',
-  'viewBox',
-  'xmlns'
-]);
+const Svg: React.ComponentType<SvgPropTypes> = createComponent(
+  getStyle,
+  'svg',
+  [
+    'onClick',
+    'onMouseEnter',
+    'onMouseLeave',
+    'onMouseOver',
+    'onMouseDown',
+    'viewBox',
+    'xmlns'
+  ]
+);
 
-export default Svg;
+const FelaFiconProvider: React.ComponentType = ({ children }) => (
+  <Provider value={Svg}>{children}</Provider>
+);
+
+export default FelaFiconProvider;

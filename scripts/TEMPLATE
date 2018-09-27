@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Svg, { StyledPropTypes } from '../'framework'';
+import Svg, { StyledPropTypes } from 'ficon-core';
 
 const icon: React.SFC<StyledPropTypes> = props => (
   <Svg 'attributes'{...props}>'content'</Svg>

@@ -16,9 +16,6 @@
     "composite": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
-    "rootDir": "src",
-    "outDir": "lib"
-  },
-  "include": ["src"]
+    "sourceMap": true
+  }
 }
