@@ -5,7 +5,7 @@ import { createRenderer } from 'fela';
 import { Provider as FelaProvider, ThemeProvider } from 'react-fela';
 import FiconFela from '../src';
 import { renderToMarkup } from 'fela-dom';
-import Comp from '../../ficon/src/icons/fa-font-awesome-logo-full';
+import Comp from '../../ficon/src/icons/fa-font-awesome';
 
 const getProvider = (fela: any, theme = {}) => {
   const Provider: React.SFC = ({ children }) => (
