@@ -16,9 +16,10 @@
   "scripts": {
     "test": "jest",
     "clean": "rimraf lib src/icons src/index.ts",
-    "build": "yarn clean && ts-node ../../scripts/generate free regular,brands && tsc"
+    "build": "yarn clean && ficon free regular,brands ts && tsc"
   },
   "devDependencies": {
+    "ficon-generator": "^0.1.3",
     "react": "^16.5.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.0.3"

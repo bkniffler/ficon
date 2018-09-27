@@ -1,3 +1,4 @@
+export default () => `
 import * as React from 'react';
 import Svg, { StyledPropTypes } from 'ficon-core';
 
@@ -8,3 +9,4 @@ const icon: React.SFC<StyledPropTypes> = props => (
 icon.displayName = 'name';
 
 export default icon;
+`;

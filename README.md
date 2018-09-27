@@ -22,13 +22,20 @@
   <br />
 </div>
 
-## Bindings
+## Table of Contents
 
-- default non-csss
-- fela
+- [Installation](#install)
+  - [Yarn](#yarn)
+  - [NPM](#npm)
+- [Examples](#examples)
+  - [raect](#react)
+  - [react-fela](#react-fela)
+- [FontAwesome Pro](#pro)
 
+<a name="install"/>
 ## Install
 
+<a name="yarn"/>
 ### Yarn
 
 ```
@@ -38,6 +45,7 @@ yarn add ficon
 yarn add ficon-solid
 ```
 
+<a name="npm"/>
 ### NPM
 
 ```
@@ -47,7 +55,11 @@ npm i ficon
 npm i ficon-solid
 ```
 
-## Example
+<a name="examples"/>
+## Examples
+
+<a name="react"/>
+### react
 
 ```jsx
 import { FaFontAwesomeLogoFull } from 'ficon';
@@ -65,7 +77,8 @@ const MyComponent = () => (
 );
 ```
 
-## Example Fela
+<a name="react-fela"/>
+### react-fela
 
 ```jsx
 import FiconProvider from 'ficon-fela';
@@ -87,36 +100,41 @@ const MyComponent = () => (
       </span>
       <span>
         I can use any other valid color too!{' '}
-        <FaFontAwesomeLogoFull color="red" />I can use any other valid color too!{' '}
-        <FaFontAwesomeLogoFull color="#666" />
+        <FaFontAwesomeLogoFull color="red" />I can use any other valid color
+        too! <FaFontAwesomeLogoFull color="#666" />
       </span>
     </div>
   </FiconProvider>
 );
 ```
 
-## Using PRO
+<a name="pro"/>
+## FontAwesome Pro
 
-If you want to use the pro icons, you will need to publish your own private package. Clone/Fork this repository and make sure you have this in your .npmrc before installing the dependencies of ficon. You will find your own package token [here](https://fontawesome.com/account).
+If you want to use the pro icons, you will need to publish your own private package. Create a new package with a package.json similar to the following. You can generate either typescript or es6 files. You can use light, brands, solid or regular icons, though you can not use light/regular/solid at the same time. If you do, you will need to generate different packages due to filename conflicts.
+
+```json
+{
+  "version": "0.0.1",
+  "name": "@myorg/icons",
+  "description": "",
+  "scripts": {
+    // For es6
+    "build": "yarn clean && ficon pro light,brands es6 && tsc",
+    // For ts
+    "build": "yarn clean && ficon pro light,brands ts && tsc"
+  },
+  "devDependencies": {
+    "ficon-generator": "^0.1.3"
+  }
+}
+```
+
+If you want to get started really quickly, just use the code found in [ficon](https://github.com/bkniffler/ficon/blob/master/packages/ficon).
+
+Make sure you got your .npmrc setup to use the fontawesome npm registry. You will find your own package token [here](https://fontawesome.com/account).
 
 ```
 @fortawesome:registry=https://npm.fontawesome.com/
 //npm.fontawesome.com/:_authToken=YOUR_FA_PACKAGE_TOKEN
-```
-
-Then
-
-```
-yarn install
-
-yarn build:pro:light
-# OR
-build:pro:regular
-# OR
-build:pro:solid
-
-# In case you have your own private repo
-npm publish --registry YOUR_PRIVATE_REGISTRY
-# In case you have npm private packages, chage the package name to something like '@myorg/icons' and publish
-npm publish
 ```

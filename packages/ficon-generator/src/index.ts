@@ -1,23 +1,44 @@
 import * as fs from 'fs-extra';
 import { resolve, basename } from 'path';
+import * as templates from './templates';
 import { upperFirst, camelCase } from 'lodash';
 import * as glob from 'glob-promise';
 
 const outDir = resolve(process.cwd(), 'src', 'icons');
+let nodeModulesPath = '';
+if (fs.existsSync(resolve(__dirname, '../node_modules/@fortawesome'))) {
+  // Inside ficon-generator
+  nodeModulesPath = resolve(__dirname, '../node_modules/@fortawesome');
+} else if (fs.existsSync(resolve(__dirname, '../../@fortawesome'))) {
+  // Installed
+  nodeModulesPath = resolve(__dirname, '../../@fortawesome');
+} else if (
+  fs.existsSync(resolve(__dirname, '../../../node_modules/@fortawesome'))
+) {
+  // Yarn workspace
+  nodeModulesPath = resolve(__dirname, '../../../node_modules/@fortawesome');
+} else {
+  throw new Error('Could not find @fortawesome');
+}
 
-const work = async (faPackage: string, faTypes: Array<string>) => {
+const work = async (
+  faPackage: string,
+  faTypes: Array<string>,
+  template = 'es6'
+) => {
+  if (!templates[template]) {
+    throw new Error(
+      `Template ${template} does not exist. Try ${Object.keys(templates).join(
+        ' or '
+      )}`
+    );
+  }
   let index = '';
-  const template = fs.readFileSync(resolve(__dirname, 'TEMPLATE'), {
-    encoding: 'utf8'
-  });
 
   const files = faTypes.reduce((state: Array<string>, faType) => {
-    const files = glob.sync(
-      `../node_modules/@fortawesome/fontawesome-${faPackage}/svgs/${faType}/*.svg`,
-      {
-        cwd: __dirname
-      }
-    );
+    const files = glob.sync(`fontawesome-${faPackage}/svgs/${faType}/*.svg`, {
+      cwd: nodeModulesPath
+    });
     return [...state, ...files];
   }, []);
 
@@ -37,7 +58,7 @@ const work = async (faPackage: string, faTypes: Array<string>) => {
       logo = true;
     }
 
-    const content: string = fs.readFileSync(resolve(__dirname, file), {
+    const content: string = fs.readFileSync(resolve(nodeModulesPath, file), {
       encoding: 'utf8'
     });
     const trimmed = content
@@ -53,7 +74,7 @@ const work = async (faPackage: string, faTypes: Array<string>) => {
     }
     fs.writeFileSync(
       resolve(outDir, `${fileName}.tsx`),
-      template
+      templates[template]()
         .replace(`'framework'`, 'fela')
         .replace(`'content'`, trimmed)
         .replace(`'attributes'`, attributes)
@@ -65,4 +86,4 @@ const work = async (faPackage: string, faTypes: Array<string>) => {
   fs.writeFileSync(resolve(outDir, '../index.ts'), index);
 };
 
-work(process.argv[2], process.argv[3].split(','));
+work(process.argv[2], process.argv[3].split(','), process.argv[4]);
