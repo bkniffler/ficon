@@ -33,9 +33,11 @@
 - [FontAwesome Pro](#pro)
 
 <a name="install"/>
+
 ## Install
 
 <a name="yarn"/>
+
 ### Yarn
 
 ```
@@ -46,6 +48,7 @@ yarn add ficon-solid
 ```
 
 <a name="npm"/>
+
 ### NPM
 
 ```
@@ -56,9 +59,11 @@ npm i ficon-solid
 ```
 
 <a name="examples"/>
+
 ## Examples
 
 <a name="react"/>
+
 ### react
 
 ```jsx
@@ -70,14 +75,16 @@ const MyComponent = () => (
       I can adapt to fontSize! <FaFontAwesomeLogoFull color="black" />
     </span>
     <span>
-      I can use any other valid color too! <FaFontAwesomeLogoFull color="red" />I
-      can use any other valid color too! <FaFontAwesomeLogoFull color="#666" />
+      I can use any other valid color too! <FaFontAwesomeLogoFull color="red" />
+      I can use any other valid color too!{' '}
+      <FaFontAwesomeLogoFull color="#666" />
     </span>
   </div>
 );
 ```
 
 <a name="react-fela"/>
+
 ### react-fela
 
 ```jsx
@@ -109,6 +116,7 @@ const MyComponent = () => (
 ```
 
 <a name="pro"/>
+
 ## FontAwesome Pro
 
 If you want to use the pro icons, you will need to publish your own private package. Create a new package with a package.json similar to the following. You can generate either typescript or es6 files. You can use light, brands, solid or regular icons, though you can not use light/regular/solid at the same time. If you do, you will need to generate different packages due to filename conflicts.
