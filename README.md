@@ -1,6 +1,6 @@
 <div align="center">
   <h2>Ficon</h2>
-  <strong>Fontawesome 5 react for fela</strong>
+  <strong>Easy, styling agnostic fontawesome5 SVG components for react.</strong>
   <br />
   <br />
   <a href="https://travis-ci.org/bkniffler/ficon">
@@ -28,8 +28,9 @@
   - [Yarn](#yarn)
   - [NPM](#npm)
 - [Examples](#examples)
-  - [raect](#react)
+  - [react](#react)
   - [react-fela](#react-fela)
+  - [more](#more)
 - [FontAwesome Pro](#pro)
 
 <a name="install"/>
@@ -87,6 +88,8 @@ const MyComponent = () => (
 
 ### react-fela
 
+Learn more about fela [here](https://github.com/rofrischmann/fela);
+
 ```jsx
 import FiconProvider from 'ficon-fela';
 import { FaFontAwesomeLogoFull } from 'ficon';
@@ -114,6 +117,12 @@ const MyComponent = () => (
   </FiconProvider>
 );
 ```
+
+<a name="more"/>
+
+### more
+
+Ficon could support more styling frameworks like styled-components, jss, glamor, etc. if you want to contribute! Checkout [ficon-fela source](https://github.com/bkniffler/ficon/blob/master/packages/ficon-fela) to see how easy it is to write a custom provider. Feel free to PR!
 
 <a name="pro"/>
 
