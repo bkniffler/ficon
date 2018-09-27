@@ -14,19 +14,20 @@
   "author": "Benjamin Kniffler <bkniffler@me.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc -w",
+    "test": "jest",
     "clean": "rimraf lib src/icons src/index.ts",
     "build": "yarn clean && ficon free solid,brands ts && tsc"
   },
   "devDependencies": {
     "ficon-generator": "^0.2.0",
-    "react": "^16.5.2"
+    "react": "^16.5.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
   },
   "peerDependencies": {
     "react": "^16.5.2"
   },
   "dependencies": {
     "ficon-core": "^0.2.0"
-  },
-  "gitHead": "f450d57deea193d5279dd690a819bedab7dd3f01"
+  }
 }

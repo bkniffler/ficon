@@ -29,6 +29,5 @@
   },
   "dependencies": {
     "ficon-core": "^0.2.0"
-  },
-  "gitHead": "f450d57deea193d5279dd690a819bedab7dd3f01"
+  }
 }
