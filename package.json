@@ -9,6 +9,7 @@
     "up": "yarn upgrade-interactive --latest",
     "netlify": "yarn build && cd example/react && yarn && yarn build",
     "prepublishOnly": "yarn build && yarn test",
+    "build": "yarn build:free:regular",
     "build:free:regular": "yarn clean && ts-node scripts/generate free regular,brands && tsc",
     "build:free:solid": "yarn clean && ts-node scripts/generate free solid,brands && tsc",
     "build:pro:light": "yarn clean && ts-node scripts/generate pro light,brands && tsc",
