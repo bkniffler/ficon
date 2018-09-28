@@ -4,10 +4,10 @@ import styled, { keyframes } from 'styled-components';
 
 const rotate360 = keyframes`
   0% {
-    transform: 'rotate(0deg)'
-  },
-  100%: {
-    transform: 'rotate(359deg)'
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
   }
 `;
 

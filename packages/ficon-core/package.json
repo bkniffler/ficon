@@ -25,5 +25,6 @@
   },
   "peerDependencies": {
     "react": "^16.5.2"
-  }
+  },
+  "gitHead": "4770bcce088681ca7c1c18a1e16c45524fa7a715"
 }

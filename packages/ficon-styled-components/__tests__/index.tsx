@@ -52,4 +52,13 @@ describe('styled-components', () => {
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
+  it('should render correctly (spin)', () => {
+    const Provider = getProvider();
+    const component = renderer.create(
+      <Provider>
+        <FaFontAwesome size={12} spin />
+      </Provider>
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });

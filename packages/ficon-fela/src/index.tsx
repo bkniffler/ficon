@@ -3,7 +3,11 @@ import { Provider, SvgPropTypes } from 'ficon-core';
 //@ts-ignore
 import { createComponent } from 'react-fela';
 
-const getStyle = (props: any) => {
+export interface SvgPropTypesExt extends SvgPropTypes {
+  theme?: any;
+}
+
+const getStyle = (props: SvgPropTypesExt): any => {
   const { theme, color, size = '1em', spin } = props;
   let animation = spin
     ? {
