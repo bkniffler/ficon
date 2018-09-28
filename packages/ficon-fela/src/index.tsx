@@ -4,8 +4,24 @@ import { Provider, SvgPropTypes } from 'ficon-core';
 import { createComponent } from 'react-fela';
 
 const getStyle = (props: any) => {
-  const { theme, color, size = '1em' } = props;
+  const { theme, color, size = '1em', spin } = props;
+  let animation = spin
+    ? {
+        animationDuration: '2s',
+        animationTimingFunction: 'linear',
+        animationIterationCount: 'infinite',
+        animationName: {
+          '0%': {
+            transform: 'rotate(0deg)'
+          },
+          '100%': {
+            transform: 'rotate(359deg)'
+          }
+        }
+      }
+    : {};
   return {
+    ...animation,
     width: size,
     height: size,
     fill:
