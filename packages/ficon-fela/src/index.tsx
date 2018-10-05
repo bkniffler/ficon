@@ -8,7 +8,7 @@ export interface SvgPropTypesExt extends SvgPropTypes {
 }
 
 const getStyle = (props: SvgPropTypesExt): any => {
-  const { theme, color, size = '1em', spin } = props;
+  const { theme, color, size = '1em', spin, rotate } = props;
   let animation = spin
     ? {
         animationDuration: '2s',
@@ -28,6 +28,7 @@ const getStyle = (props: SvgPropTypesExt): any => {
     ...animation,
     width: size,
     height: size,
+    transform: rotate !== undefined ? `rotate(${rotate}deg)` : undefined,
     fill:
       color === true
         ? theme.color

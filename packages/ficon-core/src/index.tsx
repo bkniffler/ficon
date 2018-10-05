@@ -3,6 +3,7 @@ import * as React from 'react';
 export interface StyledPropTypes {
   color?: string | boolean;
   spin?: boolean;
+  rotate?: number;
   size?: number | string;
   onClick?: ((event: React.MouseEvent<SVGSVGElement>) => void) | undefined;
 }
