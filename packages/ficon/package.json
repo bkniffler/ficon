@@ -1,5 +1,5 @@
 {
-  "version": "0.2.5",
+  "version": "0.2.6",
   "name": "ficon",
   "description": "",
   "main": "lib",
@@ -30,7 +30,7 @@
     "react": "^16.5.2"
   },
   "dependencies": {
-    "ficon-core": "^0.2.5"
+    "ficon-core": "^0.2.6"
   },
   "gitHead": "4770bcce088681ca7c1c18a1e16c45524fa7a715"
 }
