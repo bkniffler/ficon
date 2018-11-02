@@ -19,19 +19,19 @@
     "coverage": "codecov"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.2",
-    "@types/node": "^10.11.0",
-    "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.7",
-    "@types/react-test-renderer": "^16.0.2",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.2",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "@types/react-test-renderer": "^16.0.3",
     "codecov": "^3.1.0",
     "jest": "^23.6.0",
-    "lerna": "^3.4.0",
-    "react-test-renderer": "^16.5.2",
+    "lerna": "^3.4.3",
+    "react-test-renderer": "^16.6.0",
     "rimraf": "^2.6.2",
-    "ts-jest": "^23.10.2",
+    "ts-jest": "^23.10.4",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.1.6"
   },
   "dependencies": {},
   "jest": {
