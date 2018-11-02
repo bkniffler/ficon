@@ -1,5 +1,5 @@
 {
-  "version": "0.2.11",
+  "version": "0.2.12",
   "name": "ficon-solid",
   "description": "",
   "main": "lib",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
-    "ficon-generator": "^0.2.11",
+    "ficon-generator": "^0.2.12",
     "react": "^16.6.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.6"
@@ -31,7 +31,7 @@
     "react": "^16.5.2"
   },
   "dependencies": {
-    "ficon-core": "^0.2.11"
+    "ficon-core": "^0.2.12"
   },
   "gitHead": "c9bc9bc694932d9658bb6165191687aa6dff663e"
 }

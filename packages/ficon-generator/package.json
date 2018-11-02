@@ -1,5 +1,5 @@
 {
-  "version": "0.2.11",
+  "version": "0.2.12",
   "name": "ficon-generator",
   "description": "",
   "author": "Benjamin Kniffler <bkniffler@me.com>",
@@ -22,7 +22,7 @@
     "typescript": "^3.1.6"
   },
   "dependencies": {
-    "ficon-core": "^0.2.11",
+    "ficon-core": "^0.2.12",
     "fs-extra": "^7.0.0",
     "glob-promise": "^3.4.0",
     "lodash": "^4.17.11"
