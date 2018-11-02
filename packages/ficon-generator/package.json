@@ -22,8 +22,10 @@
     "typescript": "^3.0.3"
   },
   "dependencies": {
+    "ficon-core": "^0.2.7",
     "fs-extra": "^7.0.0",
     "glob-promise": "^3.4.0",
     "lodash": "^4.17.11"
-  }
+  },
+  "gitHead": "f2faec5aa7911b8a9fb20019868b13adf06caddc"
 }
