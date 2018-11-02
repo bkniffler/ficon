@@ -1,5 +1,5 @@
 {
-  "version": "0.2.9",
+  "version": "0.2.10",
   "name": "ficon",
   "description": "",
   "main": "lib",
@@ -21,7 +21,7 @@
     "build": "yarn clean && node ../ficon-generator free regular,brands ts && tsc && tsc --module esnext --outDir es"
   },
   "devDependencies": {
-    "ficon-generator": "^0.2.9",
+    "ficon-generator": "^0.2.10",
     "react": "^16.6.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.6"
@@ -30,7 +30,7 @@
     "react": "^16.5.2"
   },
   "dependencies": {
-    "ficon-core": "^0.2.9"
+    "ficon-core": "^0.2.10"
   },
   "gitHead": "5c98d573b6448a9bc1f193d7f5dab7e403d28431"
 }
