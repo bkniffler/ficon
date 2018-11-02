@@ -21,6 +21,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@types/styled-components": "^4.0.3",
     "jest-styled-components": "^6.2.2",
     "react": "^16.6.0",
     "styled-components": "^4.0.3"
@@ -35,5 +36,5 @@
   "jest": {
     "preset": "ts-jest"
   },
-  "gitHead": "4770bcce088681ca7c1c18a1e16c45524fa7a715"
+  "gitHead": "5c98d573b6448a9bc1f193d7f5dab7e403d28431"
 }
