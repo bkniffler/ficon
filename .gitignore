@@ -5,4 +5,3 @@ node_modules
 packages/**/lib
 packages/**/es
 yarn-error.log
-private

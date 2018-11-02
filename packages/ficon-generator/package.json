@@ -22,8 +22,6 @@
     "typescript": "^3.0.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.3.1",
-    "@fortawesome/fontawesome-pro": "^5.3.1",
     "fs-extra": "^7.0.0",
     "glob-promise": "^3.4.0",
     "lodash": "^4.17.11"
