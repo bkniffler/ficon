@@ -24,6 +24,7 @@
     "@types/styled-components": "^4.0.3",
     "jest-styled-components": "^6.2.2",
     "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "styled-components": "^4.0.3"
   },
   "peerDependencies": {
@@ -36,5 +37,5 @@
   "jest": {
     "preset": "ts-jest"
   },
-  "gitHead": "e9f58314fdded27448a5812e17c6a7ea8b53c35b"
+  "gitHead": "fb0a9d72b63c78bf4708637a0f62f6f9152739e1"
 }
