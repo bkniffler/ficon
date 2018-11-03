@@ -1,5 +1,5 @@
 {
-  "version": "0.2.13",
+  "version": "0.2.14",
   "name": "ficon-styled-components",
   "description": "",
   "main": "lib",
@@ -32,7 +32,7 @@
     "styled-components": "^3.4.9"
   },
   "dependencies": {
-    "ficon-core": "^0.2.13"
+    "ficon-core": "^0.2.14"
   },
   "jest": {
     "preset": "ts-jest"

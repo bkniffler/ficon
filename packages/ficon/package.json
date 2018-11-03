@@ -1,5 +1,5 @@
 {
-  "version": "0.2.13",
+  "version": "0.2.14",
   "name": "ficon",
   "description": "",
   "main": "lib",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
-    "ficon-generator": "^0.2.13",
+    "ficon-generator": "^0.2.14",
     "react": "^16.6.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.6"
@@ -31,7 +31,7 @@
     "react": "^16.5.2"
   },
   "dependencies": {
-    "ficon-core": "^0.2.13"
+    "ficon-core": "^0.2.14"
   },
   "gitHead": "fb0a9d72b63c78bf4708637a0f62f6f9152739e1"
 }
