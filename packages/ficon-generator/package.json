@@ -9,7 +9,10 @@
   "module": "es",
   "types": "lib/index.d.js",
   "scripts": {
-    "build": "tsc && tsc --module esnext --outDir es"
+    "dev": "run-p \"ts:* -- --watch\"",
+    "build": "run-p ts:*",
+    "ts:es": "tsc --module esnext --outDir es",
+    "ts:lib": "tsc"
   },
   "bin": {
     "ficon": "./lib/cli.js"
@@ -27,5 +30,5 @@
     "glob-promise": "^3.4.0",
     "lodash": "^4.17.11"
   },
-  "gitHead": "c9bc9bc694932d9658bb6165191687aa6dff663e"
+  "gitHead": "e9f58314fdded27448a5812e17c6a7ea8b53c35b"
 }

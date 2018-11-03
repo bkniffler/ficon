@@ -21,7 +21,7 @@
     "build": "yarn clean && node ../ficon-generator free regular,brands ts && tsc && tsc --module esnext --outDir es"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free": "^5.5.0",
     "ficon-generator": "^0.2.12",
     "react": "^16.6.0",
     "ts-node": "^7.0.1",
@@ -33,5 +33,5 @@
   "dependencies": {
     "ficon-core": "^0.2.12"
   },
-  "gitHead": "c9bc9bc694932d9658bb6165191687aa6dff663e"
+  "gitHead": "e9f58314fdded27448a5812e17c6a7ea8b53c35b"
 }
