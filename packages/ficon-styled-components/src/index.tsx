@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Provider, SvgPropTypes } from 'ficon-core';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 const rotate360 = keyframes`
   0% {
@@ -16,7 +16,12 @@ const Svg = styled<SvgPropTypes>(({ size, color, spin, ...rest }) => (
 ))`
   width: ${({ size }) => size || '1em'};
   height: ${({ size }) => size || '1em'};
-  animation: ${({ spin }) => (spin ? `${rotate360} 2s linear infinite` : '')};
+  animation: ${({ spin }) =>
+    spin
+      ? css`
+          ${rotate360} 2s linear infinite;
+        `
+      : ''};
   fill: ${({ theme, color }) => {
     return color === true
       ? theme.color
