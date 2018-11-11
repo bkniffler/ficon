@@ -1,6 +1,7 @@
 {
   "version": "0.2.15",
   "name": "ficon-fela",
+  "sideEffects": false,
   "description": "",
   "main": "lib",
   "esnext": "es",
@@ -21,7 +22,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "react": "^16.6.0",
+    "react": "^16.6.1",
     "react-fela": "^8.0.4"
   },
   "peerDependencies": {

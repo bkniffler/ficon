@@ -1,6 +1,7 @@
 {
   "version": "0.2.15",
   "name": "ficon-solid",
+  "sideEffects": false,
   "description": "",
   "main": "lib",
   "esnext": "es",
@@ -23,7 +24,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "ficon-generator": "^0.2.15",
-    "react": "^16.6.0",
+    "react": "^16.6.1",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.6"
   },

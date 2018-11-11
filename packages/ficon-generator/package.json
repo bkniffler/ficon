@@ -1,6 +1,7 @@
 {
   "version": "0.2.15",
   "name": "ficon-generator",
+  "sideEffects": false,
   "description": "",
   "author": "Benjamin Kniffler <bkniffler@me.com>",
   "license": "MIT",
@@ -19,14 +20,14 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
-    "@types/lodash": "^4.14.117",
+    "@types/lodash": "^4.14.118",
     "rimraf": "^2.6.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.6"
   },
   "dependencies": {
     "ficon-core": "^0.2.15",
-    "fs-extra": "^7.0.0",
+    "fs-extra": "^7.0.1",
     "glob-promise": "^3.4.0",
     "lodash": "^4.17.11"
   },

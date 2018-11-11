@@ -1,6 +1,7 @@
 {
   "version": "0.2.15",
   "name": "ficon-styled-components",
+  "sideEffects": false,
   "description": "",
   "main": "lib",
   "esnext": "es",
@@ -22,9 +23,9 @@
   },
   "devDependencies": {
     "@types/styled-components": "^4.0.3",
-    "jest-styled-components": "^6.2.2",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "jest-styled-components": "^6.3.1",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
     "styled-components": "^4.0.3"
   },
   "peerDependencies": {
