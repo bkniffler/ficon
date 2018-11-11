@@ -1,5 +1,5 @@
 {
-  "version": "0.2.15",
+  "version": "0.3.0",
   "name": "ficon-fela",
   "sideEffects": false,
   "description": "",
@@ -30,7 +30,7 @@
     "react-fela": "^8.0.0"
   },
   "dependencies": {
-    "ficon-core": "^0.2.15"
+    "ficon-core": "^0.3.0"
   },
   "jest": {
     "preset": "ts-jest"
